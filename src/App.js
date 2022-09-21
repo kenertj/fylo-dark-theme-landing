@@ -12,7 +12,10 @@ const theme = createTheme({
     fontFamily: "Raleway, Open Sans, Roboto, sans-serif"
   },
   palette: {
-    mode: 'dark',
+    background: {
+      default: '#1c2230',
+      paper: '#1c2230',
+    },
   },
 });
 

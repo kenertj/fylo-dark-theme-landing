@@ -22,8 +22,16 @@ const Home = () => {
             }}>
                 <FeaturesSection />
             </Box>
-            <HowItWorksSection />
-            <Testimonials />
+            <Box sx={{
+                background: '#181e2a'
+            }}>
+                <HowItWorksSection />
+            </Box>
+            <Box sx={{
+                background: '#181e2a'
+            }}>
+                <Testimonials />
+            </Box>
 
         </Box>
     )
