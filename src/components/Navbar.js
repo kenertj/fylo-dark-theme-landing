@@ -5,6 +5,7 @@ import Logo from '../assets/logo.svg';
 const Navbar = () => {
     return (
         <AppBar
+            position="absolute"
             elevation={0}
             sx={{
                 background: '#1c2230'

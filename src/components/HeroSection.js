@@ -1,26 +1,74 @@
 import React from 'react'
-import { Box } from '@mui/material';
+import { Box, Typography, Button } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2';
 import IntroIllustration from '../assets/illustration-intro.png'
+import DesktopPattern from '../assets/bg-curvy-desktop.svg'
 
 const HeroSection = () => {
     return (
+        <Grid container sx={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center'
+        }}>
+            <Grid xs={12} sx={{
+                margin: '0 auto'
+            }}>
+                <Box
 
-        <Box
-            display="flex"
-            justifyContent="center"
-            alignItems="center"
-            minHeight="100vh"
-            component="img"
-            sx={{
-                height: '100%',
-                width: '100%'
+
+                    maxWidth="100%"
+                    position="absolute"
+                    top="90vh"
+                    minHeight="10vh"
+                    component="img"
+                    margin="auto"
+                    alt="Logo"
+                    src={DesktopPattern}
 
 
-            }}
-            alt="Logo"
-            src={IntroIllustration}
+                />
 
-        />
+                <Box
+                    display="flex"
+                    justifyContent="center"
+                    alignItems="center"
+                    minHeight="10vh"
+                    component="img"
+                    margin="auto"
+                    alt="Logo"
+                    src={IntroIllustration}
+
+                />
+
+                <Typography fontSize="30px" fontWeight="1000" color="white" mt="30px" mb="20px" textAlign="center" sx={{
+                    position: "relative",
+                }}>All your files in one secure location,<br /> accessible anywhere.</Typography>
+
+                <Typography fontSize="15px" fontWeight="500" color="white" mt="20px" mb="20px" textAlign="center" sx={{
+                    position: "relative",
+                }}>Fylo stores all your most important files in one secure location.<br /> Access them wherever you need, share and collaborate with <br /> friends family, and co-workers.</Typography>
+                <Box textAlign='center'>
+                    <Button sx={{
+                        position: "relative",
+                        color: 'white',
+                        borderRadius: '23px',
+                        padding: '10px 80px',
+                        textTransform: 'none',
+                        backgroundImage: 'linear-gradient(#65e2d9,#339ecc)',
+                        ':hover': {
+                            backgroundColor: "#8cdae4",
+                            backgroundImage: "none"
+                        },
+
+
+
+                    }}>Get Started</Button>
+                </Box>
+
+
+            </Grid>
+        </Grid>
     )
 }
 

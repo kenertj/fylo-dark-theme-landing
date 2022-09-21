@@ -10,11 +10,18 @@ const Home = () => {
         <Box
             sx={{
                 mt: '62px',
-                background: '#1c2230'
+
             }}
-        >
-            <HeroSection />
-            <FeaturesSection />
+        >   <Box sx={{
+            background: '#1c2230'
+        }}>
+                <HeroSection />
+            </Box>
+            <Box sx={{
+                background: '#181e2a'
+            }}>
+                <FeaturesSection />
+            </Box>
             <HowItWorksSection />
             <Testimonials />
 
