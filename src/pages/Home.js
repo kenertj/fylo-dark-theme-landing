@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection'
 import FeaturesSection from '../components/FeaturesSection'
 import HowItWorksSection from '../components/HowItWorksSection'
 import Testimonials from '../components/Testimonials'
+import Getstarted from '../components/Getstarted'
 
 const Home = () => {
     return (
@@ -31,6 +32,11 @@ const Home = () => {
                 background: '#181e2a'
             }}>
                 <Testimonials />
+            </Box>
+            <Box sx={{
+                background: '#181e2a'
+            }}>
+                <Getstarted />
             </Box>
 
         </Box>

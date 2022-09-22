@@ -25,7 +25,11 @@ function App() {
       <CssBaseline />
       <Navbar />
       <Home />
-      <Footer />
+      <Box sx={{
+        background: '#0c1524'
+      }}>
+        <Footer />
+      </Box>
     </ThemeProvider>
 
   );
