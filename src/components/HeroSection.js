@@ -36,8 +36,12 @@ const HeroSection = () => {
                     minHeight="10vh"
                     component="img"
                     margin="auto"
+                    width="50%"
                     alt="Logo"
                     src={IntroIllustration}
+                    sx={{
+                        sm: { width: '100%' }
+                    }}
 
                 />
 

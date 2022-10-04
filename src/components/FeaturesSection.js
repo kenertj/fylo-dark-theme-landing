@@ -18,7 +18,7 @@ const FeaturesSection = () => {
 
 
             }}>
-                <Grid xs={6} sx={{
+                <Grid xs={12} sm={6} sx={{
 
                 }}>
                     <Box
@@ -36,7 +36,9 @@ const FeaturesSection = () => {
                     <Typography fontSize="18px" fontWeight="1000" color="white" mt="20px" textAlign="center">Access your files, anywhere</Typography>
                     <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="center">The ability to use a smartphone, tablet, or computer <br /> to access your account means your files follow you <br /> everywhere.</Typography>
                 </Grid>
-                <Grid xs={6}>
+                <Grid xs={12} sm={6} sx={{
+                    mt: { xs: '10vh' }
+                }}>
                     <Box
                         display="flex"
                         justifyContent="center"
@@ -52,8 +54,8 @@ const FeaturesSection = () => {
                     <Typography fontSize="18px" fontWeight="1000" color="white" mt="20px" textAlign="center">Security you can trust</Typography>
                     <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="center">2-factor authentication and user-controlled encryption are <br /> just a couple of the security features we allow to help <br /> secure your files.</Typography>
                 </Grid>
-                <Grid xs={6} sx={{
-                    mt: '15vh'
+                <Grid xs={12} sm={6} sx={{
+                    mt: { xs: '10vh', sm: '15vh' }
                 }}>
                     <Box
                         display="flex"
@@ -70,9 +72,9 @@ const FeaturesSection = () => {
                     <Typography fontSize="18px" fontWeight="1000" color="white" mt="20px" textAlign="center">Real-time collaboration</Typography>
                     <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="center">Securely share files and folders with friends, family and <br /> colleagues for live collaboration. No email attachments <br /> required.</Typography>
                 </Grid>
-                <Grid xs={6}
+                <Grid xs={12} sm={6}
                     sx={{
-                        mt: '15vh'
+                        mt: { xs: '10vh', sm: '15vh' }
                     }}>
                     <Box
                         display="flex"
@@ -91,7 +93,7 @@ const FeaturesSection = () => {
                 </Grid>
 
             </Grid>
-        </Box>
+        </Box >
     )
 }
 

@@ -14,7 +14,7 @@ const Testimonials = () => {
         }}>
             <Grid container spacing={2}>
 
-                <Grid xs={4}>
+                <Grid xs={12} sm={4}>
                     <Box
                         maxHeight="4vh"
                         component="img"
@@ -28,7 +28,7 @@ const Testimonials = () => {
 
 
                     />
-                    <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c', mb: '25vh', position: 'relative' }}>
+                    <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c', mb: { xs: '2vh', sm: '25vh' }, position: 'relative' }}>
                         <CardContent>
                             <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="left">Fylo has improved our team productivity by <br /> an order of magnitude. Since making the <br /> switch our team has become a well-oiled <br /> collaboration machine.</Typography>
                             <Box sx={{
@@ -53,7 +53,7 @@ const Testimonials = () => {
                 </Grid>
 
 
-                <Grid xs={4}>
+                <Grid xs={12} sm={4}>
                     <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c' }}>
                         <CardContent>
                             <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="left">Fylo has improved our team productivity by <br /> an order of magnitude. Since making the <br /> switch our team has become a well-oiled <br /> collaboration machine.</Typography>
@@ -78,7 +78,7 @@ const Testimonials = () => {
                     </Card>
 
                 </Grid>
-                <Grid xs={4}>
+                <Grid xs={12} sm={4}>
                     <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c' }}>
                         <CardContent>
                             <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="left">Fylo has improved our team productivity by <br /> an order of magnitude. Since making the <br /> switch our team has become a well-oiled <br /> collaboration machine.</Typography>
