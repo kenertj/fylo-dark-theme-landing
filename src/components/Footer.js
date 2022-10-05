@@ -14,17 +14,20 @@ const Footer = () => {
             <Box
                 component="img"
                 sx={{
-                    height: 34,
+                    height: { xs: '50px', sm: '34px' },
                     mt: "20vh",
-                    ml: "10vh"
+                    ml: { xs: '2vh', sm: '10vh' }
                 }}
                 alt="Logo"
                 src={Logo}
             />
             <Grid container spacing={1} sx={{
-                mt: '5vh'
+                mt: '5vh',
+                ml: { xs: '1vh' }
             }}>
-                <Grid item xs>
+                <Grid xs={12} sm={3} sx={{
+                    mb: { xs: '1vh', sm: '0vh' }
+                }}>
                     <Box
                         display="inline-block"
                         justifyContent="center"
@@ -38,9 +41,13 @@ const Footer = () => {
                         src={IconLocation}
 
                     />
-                    <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="center" display="inline">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Typography>
+
+                    <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="left" ml="2vh" display="inline">Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</Typography>
+
                 </Grid>
-                <Grid item xs>
+                <Grid xs={12} sm={3} sx={{
+                    mb: { xs: '4vh', sm: '0vh' }
+                }}>
                     <Box
                         display="inline-block"
                         justifyContent="center"
@@ -53,7 +60,9 @@ const Footer = () => {
                         src={IconPhone}
 
                     />
-                    <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="center" display="inline-block" ml="2vh">+1-543-123-4567</Typography>
+                    <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="center" display="inline-block" ml="2vh" sx={{
+                        mb: { xs: '1vh', sm: '0vh' }
+                    }}>+1-543-123-4567</Typography>
                     <br />
                     <Box
                         display="inline-block"
@@ -69,7 +78,10 @@ const Footer = () => {
                     />
                     <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="center" display="inline-block" ml="2vh">example@fylo.com</Typography>
                 </Grid>
-                <Grid item xs>
+                <Grid xs={12} sm={3} sx={{
+                    mb: { xs: '4vh', sm: '0vh' },
+                    lineHeight: '2'
+                }}>
                     <Link href="#" sx={{
                         textDecoration: 'none',
                         color: '#f9ffff',
@@ -78,6 +90,7 @@ const Footer = () => {
                             fontWeight: '700',
 
                         },
+
                     }}>About Us</Link>
                     <br />
                     <Link href="#" sx={{
@@ -110,7 +123,9 @@ const Footer = () => {
                         },
                     }}>Blog</Link>
                 </Grid>
-                <Grid item xs>
+                <Grid xs={12} sm={3} sx={{
+                    lineHeight: '2',
+                }}>
                     <Link href="#" sx={{
                         textDecoration: 'none',
                         color: '#f9ffff',

@@ -19,7 +19,7 @@ const FeaturesSection = () => {
 
             }}>
                 <Grid xs={12} sm={6} sx={{
-
+                    mt: { xs: '10vh' }
                 }}>
                     <Box
                         display="flex"

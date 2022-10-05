@@ -10,25 +10,29 @@ const Testimonials = () => {
     return (
         <Box sx={{
             margin: '0 auto',
-            maxWidth: '1100px'
+            maxWidth: { xs: '43vh', sm: '1100px' }
         }}>
             <Grid container spacing={2}>
 
                 <Grid xs={12} sm={4}>
                     <Box
-                        maxHeight="4vh"
+
                         component="img"
                         top="50%"
                         alt="Logo"
                         src={Quotes}
                         position="absolute"
-                        mt="238vh"
-                        ml="-1vh"
 
+                        ml="-1vh"
+                        sx={{
+                            mt: { xs: '291vh', sm: '238vh' },
+                            maxHeight: { xs: '3vh', sm: '4vh' }
+                        }}
 
 
                     />
-                    <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c', mb: { xs: '2vh', sm: '25vh' }, position: 'relative' }}>
+
+                    <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c', mb: { xs: '0vh', sm: '25vh' }, mt: { xs: '15vh', sm: '0vh' }, position: 'relative' }}>
                         <CardContent>
                             <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="left">Fylo has improved our team productivity by <br /> an order of magnitude. Since making the <br /> switch our team has become a well-oiled <br /> collaboration machine.</Typography>
                             <Box sx={{
@@ -79,7 +83,7 @@ const Testimonials = () => {
 
                 </Grid>
                 <Grid xs={12} sm={4}>
-                    <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c' }}>
+                    <Card sx={{ maxWidth: '43vh', backgroundColor: '#21293c', mb: { xs: '45vh' } }}>
                         <CardContent>
                             <Typography fontSize="13px" fontWeight="200" color="white" mt="5px" textAlign="left">Fylo has improved our team productivity by <br /> an order of magnitude. Since making the <br /> switch our team has become a well-oiled <br /> collaboration machine.</Typography>
                             <Box sx={{
@@ -102,7 +106,9 @@ const Testimonials = () => {
 
                     </Card>
 
+
                 </Grid>
+
             </Grid>
         </Box>
 

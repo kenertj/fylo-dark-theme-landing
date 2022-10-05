@@ -32,7 +32,7 @@ const HowItWorksSection = () => {
                 <Box sx={{
                     padding: { xs: '0 5px', sm: '0' }
                 }}>
-                    <Typography fontSize="30px" fontWeight="700" color="white" textAlign="left" sx={{ mt: { xs: '3vh', sm: '15vh' } }}>Stay productive,<br /> wherever you are</Typography>
+                    <Typography fontWeight="700" color="white" textAlign="left" sx={{ mt: { xs: '3vh', sm: '15vh' }, fontSize: { xs: '25px', sm: '30px' } }}>Stay productive,<br /> wherever you are</Typography>
                     <Typography fontSize="13px" fontWeight="200" color="white" mt="2vh" textAlign="left">Never let location be an issue when accessing your files. Fylo has you <br /> covered for all of your file storage needs.</Typography>
                     <Typography fontSize="13px" fontWeight="200" color="white" mt="2vh" textAlign="left">Securely share files and folders with friends, family and colleagues for live <br /> collaboration. No email attachments required.</Typography>
                     <Box sx={{
